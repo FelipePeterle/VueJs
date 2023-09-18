@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link rel="stylesheet" href="/exercicio_contatos_facil/style.css">
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+
+
+
+		</header>
+		<section class="container">
+			<section class="container__content">
+
+				<form>
+					{{frase}}
+					<input v-model="nomeInput"><br>
+
+					<button @click.prevent="adicionar">Adicionar</button>
+				</form>
+				
+
+			</section>
+			<aside class="container__sidebar">
+
+				<ul>
+					<li v-for="item in lista">{{item}}</li>
+				</ul>
+
+				Total de nomes: {{ lista.length }}
+
+			</aside>
+		</section>
+		<footer class="footer">
+
+
+
+		</footer>
+	</div>
+
+	<script src="/exercicio_contatos_facil/script.js"></script>
+</body>
+</html>
